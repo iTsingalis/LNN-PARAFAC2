@@ -1,35 +1,3 @@
-## LNN-PARAFAC2: Lightweight Non-Negative PARAFAC2 with Applications in Cross-Lingual Document Classification
-
-This repository contains the code for the paper "LNN-PARAFAC2: Lightweight Non-Negative PARAFAC2 with Applications in Cross-Lingual Document Classification" introduced
-by Ioannis Tsingalis, Evangelia Pantraki, and Constantine Kotropoulos
-
-## Introduction
-
-This paper proposes a novel lightweight non-negative variant of Parallel Factor Analysis 2 (PARAFAC2), 
-coined as LNN-PARAFAC2, that simultaneously enforces non-negativity and reduces computational complexity. 
-Non-negativity is imposed through the application of Lagrange multipliers with multiplicative update rules. 
-In parallel, the number of model parameters is reduced by imposing a diagonal structure on one of the common 
-factor matrices, which reduces parameters from R2 to R and lowers the per-iteration computational burden. 
-Theoretical analysis establishes the uniqueness of the solution and convergence of the updates. To our knowledge, 
-this is the first approach that integrates non-negativity into PARAFAC2 while also reducing computational complexity. 
-Experimental results on toy examples and zero-shot cross-lingual document classification tasks validate the 
-effectiveness of LNN-PARAFAC2, showing competitive or superior performance compared to existing non-negative 
-PARAFAC2 methods, deep learning techniques, and PARAFAC2. 
-
-## Usage
-### 1. Requirements
-The requirements are in the requirements.txt file. 
-
-
-### 2. Download Datasets
-You can download the dataset from here and extract them to the folder Datasets (will be included).
-
-
-### 3. Train and Test
-
-To train LNN-PARAFAC2 model, you can use the following configurations in VSCode.
-
-```
 {
     // Use IntelliSense to learn about possible attributes.
     // Hover to view descriptions of existing attributes.
@@ -109,9 +77,3 @@ To train LNN-PARAFAC2 model, you can use the following configurations in VSCode.
         }
     ]
 }
-```
-
-## Contact
-If you have any question, please feel free to email us.
-
-Ioannis Tsingalis or Constantine Kotropoulos (ioannis.tsingalis@gmail.com or costas@csd.auth.gr)
